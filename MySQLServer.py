@@ -2,7 +2,7 @@ import mysql.connector
 
 try:
   
-# Database connection details (replace with your own)
+# Database connection details 
 mydb = mysql.connector.connect(
     host ="122.0.0.1",
     userv="root",
@@ -15,7 +15,7 @@ if mydb.is_connected():
 else 
   cursor mydb.cursor()
   cursor.execute('CREATE DATABASE IF NOT EXISTS alx_book_store')
-except mysql.Connector.Error as err:
+except mysql.connector.Error as err:
   print('Something went wrong:{}'.format(err))
 
 
